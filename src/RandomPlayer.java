@@ -20,10 +20,10 @@ public class RandomPlayer {
         int randomCol;
         int randomRow;
 
-        do {
+         {
             randomRow = (int) (Math.random() * 10);
             randomCol = (int) (Math.random() * 10);
-        } while(!gameBoard[randomRow][randomCol].isAlive);
+        } while(!gameBoard[randomRow][randomCol].isAlive== false);
 
         myMove = new Point(randomRow,randomCol);
         return myMove;
