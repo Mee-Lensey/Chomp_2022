@@ -70,6 +70,7 @@ public class Chomp implements Runnable, MouseListener {
 
         setUpGraphics();
 
+
         board = new Chip[10][10];
         for (int r = 0; r < board[0].length; r++) {
             for (int c = 0; c < board[0].length; c++) {
@@ -210,6 +211,7 @@ public class Chomp implements Runnable, MouseListener {
         panel.add(canvas, BorderLayout.CENTER);  // adds the canvas to the panel.
 
         setupButtons();
+
 
         buttons = new JPanel();
         buttons.setLayout(new GridLayout(1,5));
